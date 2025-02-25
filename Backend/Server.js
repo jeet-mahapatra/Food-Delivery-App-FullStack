@@ -36,10 +36,10 @@ app.get("/",(req,res)=>{
 })
 
 
+const PORT = process.env.PORT || 5000
 
-
-app.listen(process.env.PORT,()=>{
-    console.log(`Server Started on http://localhost:${process.env.PORT}`)
+app.listen(PORT,()=>{
+    console.log(`Server Started on http://localhost:${PORT}`)
 })
 
 // mongodb+srv://jeetvictus:<db_password>@cluster0.fty5p.mongodb.net/
