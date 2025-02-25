@@ -9,6 +9,16 @@ import { orderRouter } from "./Routes/orderRoutes.js";
 dotenv.config()
 
 
+// cors
+app.use(cors(
+    {
+        origin: [""],
+        methods:["POST","GET"],
+        credentials:true
+    }
+))
+
+
 // app config
 
 const app = express()
