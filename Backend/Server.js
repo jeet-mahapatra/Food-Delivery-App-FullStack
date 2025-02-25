@@ -9,6 +9,12 @@ import { orderRouter } from "./Routes/orderRoutes.js";
 dotenv.config()
 
 
+
+
+// app config
+
+const app = express()
+
 // cors
 app.use(cors(
     {
@@ -18,10 +24,6 @@ app.use(cors(
     }
 ))
 
-
-// app config
-
-const app = express()
 
 
 // middleware
