@@ -18,7 +18,7 @@ const app = express()
 // cors
 app.use(cors(
     {
-        origin: ["https://food-delivary-app-full-stack-frontend-three.vercel.app"],
+        origin: ["https://food-delivary-app-full-stack-frontend-three.vercel.app","https://food-delivary-app-full-stack-admin.vercel.app/order"],
         methods:["POST","GET"],
         credentials:true
     }
