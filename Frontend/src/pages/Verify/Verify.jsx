@@ -20,12 +20,12 @@ const Verify = () => {
       //  we ge success true and also update paid message
       console.log(response.data.success);
 
-      
-  if (response.data.success) {
-    window.location.href = `${window.location.origin}/myorders`; // Redirects to frontend
-  } else {
-    window.location.href = `${window.location.origin}`; // Redirects to frontend
-  }
+      if (response.data.success){
+        navigate("/myorders");
+      } 
+      else{
+        navigate("/")
+      }
     }
 
     useEffect(()=>{
