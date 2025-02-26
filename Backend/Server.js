@@ -18,7 +18,7 @@ const app = express()
 // cors
 app.use(cors(
     {
-        origin: ["https://food-delivary-app-full-stack-frontend-three.vercel.app","https://food-delivary-app-full-stack-admin.vercel.app/order"],
+        origin: ["https://food-delivary-app-full-stack-frontend-three.vercel.app","https://food-delivary-app-full-stack-admin.vercel.app"],
         methods:["POST","GET"],
         credentials:true
     }
@@ -29,7 +29,7 @@ app.use(cors(
 // middleware
 
 app.use(express.json())
-app.use(cors())
+
 
 // DB Connections
 
