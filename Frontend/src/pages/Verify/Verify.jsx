@@ -20,11 +20,11 @@ const Verify = () => {
       //  we ge success true and also update paid message
       console.log(response.data.success);
 
-      if (response.data.payment === "true"){
-        navigate("/myorders");
+      if (response.data.success){
+        window.location.href = `${url}/myorders`;
       } 
       else{
-        navigate("/")
+        window.location.href = `${url}`
       }
     }
 
