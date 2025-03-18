@@ -5,8 +5,11 @@ export const StoreContext = createContext();
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
+
   const url = "https://food-delivary-app-fullstack-backend.onrender.com" ;
-  // const url = " http://localhost:4000" ;
+
+  // const url = " http://localhost:4000" ; 
+  
   const [token, setToken] = useState("");
   const [food_list, setFood_list] = useState([]);
 
@@ -31,10 +34,14 @@ const StoreContextProvider = (props) => {
 
   const getTotalCartAmount = () => {
     let totalAmount = 0;
-    for (const item in cartItems) {
+    for (const item in cartItems ) {
       if (cartItems[item] > 0) {
-        let itemInfo = food_list.find((product) => product._id === item);
+
+        let itemInfo = food_list.find((product) => product._id === (item));
+
         totalAmount += itemInfo.price * cartItems[item];
+        
+
       }
     }
     return totalAmount;

@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
             <img src={assets.logo} alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, fugit vero sint quas quibusdam alias cum nulla, magnam obcaecati, corporis et repellendus consequuntur itaque ratione dolore minus eum iure suscipit.
+            <p>"Experience delicious, freshly prepared meals delivered fast to your doorstep. Our food shop offers affordable, high-quality dishes made with love, ensuring a delightful and satisfying dining experience every time you order!" 
             </p>
             <div className="footer-social-icon">
                 <img src={assets.facebook_icon} alt="" />
@@ -32,12 +32,12 @@ const Footer = () => {
             <h2>GET IN TOUCH</h2>
             <ul>
                 <li>+1-212-456-7890</li>
-                <li>contact@tomato.com</li>
+                <li>contact@tasty.com</li>
             </ul>
         </div>
       </div>
       <hr />
-      <p className='footer-copyright'>Copyright 2024 © Tomato.com - All Right Reserved</p>
+      <p className='footer-copyright'>Copyright 2024 © tastyfood123.vercel.app - All Right Reserved</p>
     </div>
   )
 }

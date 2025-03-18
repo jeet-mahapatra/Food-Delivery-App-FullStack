@@ -11,6 +11,8 @@ const App = () => {
 
   const url = "https://food-delivary-app-fullstack-backend.onrender.com"
 
+  // const url = "http://localhost:4000"
+
   return (
     <div>
       <ToastContainer/>

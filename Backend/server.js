@@ -15,7 +15,10 @@ dotenv.config()
 
 const app = express()
 
+
+
 // cors
+
 app.use(cors(
     {
         origin: ["https://food-delivary-app-full-stack-frontend-three.vercel.app","https://food-delivary-app-full-stack-admin.vercel.app"],
@@ -54,4 +57,3 @@ app.listen(PORT,()=>{
     console.log(`Server Started on http://localhost:${PORT}`)
 })
 
-// mongodb+srv://jeetvictus:<db_password>@cluster0.fty5p.mongodb.net/

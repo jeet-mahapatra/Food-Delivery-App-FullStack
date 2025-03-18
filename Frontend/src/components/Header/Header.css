@@ -12,16 +12,17 @@
     flex-direction: column;
     align-items: start;
     gap: 1.5 vw;
-    max-width: 50%;
-    bottom: 10%;
+    max-width: 35%;
+    bottom: 20%;
     left: 6vw;
     animation: fadeIn 3s;
+    color:blue;
 }
 
 .header-contents h3{
     font-weight: 500;
-    color: white;
-    font-size: max(3.5vw , 22px);
+    color:white;
+    font-size: max(4.5vw , 22px);
 }
 
 .header-contents p{
@@ -32,11 +33,11 @@
 
 .header-contents button{
     border: none;
-    color: #747474;
+    color: yellow;
     font-weight: 500;
     margin-top: 1vw;
     padding: 1vw 2.3vw;
-    background-color: white;
+    background-color:red;
     font-size: max(1vw,13px);
     border-radius: 50px;
 }
